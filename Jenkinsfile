@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'dotnet restore WebApplication13/WebApplication13.csproj'
+                bat 'docker build WebApplication13 -t dockertest:${env.BUILD_ID}'
             }
         }
     }

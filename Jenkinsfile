@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "docker-compose up"
+                bat "docker build WebApplication13 -t dockertest:${env.BUILD_ID} -f WebApplication13/Dockerfile"
             }
         }
     }

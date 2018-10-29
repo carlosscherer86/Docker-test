@@ -9,6 +9,3 @@ pipeline {
         }
     }
 }
-
-//teste novo
-//teste novo

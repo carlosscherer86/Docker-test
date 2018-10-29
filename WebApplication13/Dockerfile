@@ -17,3 +17,5 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "WebApplication13.dll"]
+
+//teste
